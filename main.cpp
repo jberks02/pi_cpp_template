@@ -14,7 +14,12 @@ int main() {
         // Button is pressed if digitalRead returns 0
             // Toggle the LED
             digitalWrite(0, !digitalRead(0));
-            delay(100); // Delay 500ms
+            uint state = digitalRead(0);
+            string onOff;
+            if(state == 0) onOff = " off ";
+            else onOff = " on ";
+            cout << "LED is in an" + onOff + "state" << '\n';
+            delay(200); // Delay 500ms
     }
     return 0;
 }
