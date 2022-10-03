@@ -17,3 +17,6 @@ cmake installation
 - sudo apt update
 - sudo apt upgrade-full
 - sudo apt install cmake
+
+git
+- sudo apt install git
